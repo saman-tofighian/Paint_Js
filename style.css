@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(125deg, #4a98, rgba(221, 160, 221, 0.704));
+}
+.container {
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2);
+}
+.tools-area {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0 15px;
+}
+.tools {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+.color {
+  display: flex;
+  align-items: center;
+}
+input[type="color"] {
+  border: none;
+  width: 20px;
+  height: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 15px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: 2px solid lightgray;
+}
+label,
+i {
+  margin: 0 3px;
+  cursor: pointer;
+}
+.buttons > button {
+  all: unset;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.buttons > .save {
+  background: #4a98f7;
+  color: #fff;
+}
+.buttons > .clear:hover {
+  background: lightgray;
+}
+.draw-area > canvas {
+  width: 100%;
+  height: 450px;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+}
+.active {
+  color: #4a98f7;
+}

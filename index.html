@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint App | Saman Tofighian</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tools-area">
+        <div class="tools">
+          <div class="eraser">
+            <i class="fas fa-eraser"></i>
+            <label>eraser</label>
+          </div>
+          <div class="brush active">
+            <i class="fa-solid fa-paint-brush"></i>
+            <label>brush</label>
+          </div>
+          <div class="color">
+            <i class="fa-sharp fa-solid fa-palette"></i>
+            <label for="color-picker">choose color</label>
+            <input type="color" id="color-picker" />
+          </div>
+          <input type="range" id="brush-width" min="1" max="10" />
+        </div>
+        <div class="buttons">
+          <button class="save">save</button>
+          <button class="clear">clear</button>
+        </div>
+      </div>
+      <div class="draw-area">
+        <canvas> </canvas>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
